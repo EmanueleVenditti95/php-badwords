@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="text.php" method="POST">
-        <input type="text" placeholder="Parola da censurare...">
-        <input type="submit">
+        <input type="text" placeholder="Parola da censurare..." name="censor_word">
+        <input type="submit" value="Send">
     </form>
 </body>
 </html>
