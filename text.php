@@ -4,8 +4,10 @@
      nostrum labore eveniet sed nemo! Voluptas tempora perspiciatis, et commodi deleniti, atque
       porro neque sapiente similique ut, officia nesciunt quibusdam qui explicabo. Aperiam reiciendis laudantium commodi.';
 
-     $censorship = $_POST['censor_word'];
-     var_dump($_POST['censor_word']);  
+     $censorship = trim($_POST['censor_word']);
+     $replace = '***'; 
+     $new_text = str_replace($censorship,$replace,$text);
+     var_dump($new_text); 
 ?> 
 
 
@@ -20,7 +22,9 @@
     <h1>Censura il testo!</h1>
     <p><?php echo $text; ?></p>
     <p><?php echo strlen($text); ?></p>
-    <p><?php echo $_POST['censor_word'];  ?></p>
+    <p><?php echo $new_text ?></p>
+    <p><?php echo strlen($new_text)?></p>
+
 </body>
 </html>
 
