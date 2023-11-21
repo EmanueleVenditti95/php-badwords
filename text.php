@@ -1,9 +1,5 @@
 <?php
-    $text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eligendi praesentium, 
-    commodi fugit, beatae sit dolorem nam laboriosam, omnis asperiores in corporis cum tenetur
-     nostrum labore eveniet sed nemo! Voluptas tempora perspiciatis, et commodi deleniti, atque
-      porro neque sapiente similique ut, officia nesciunt quibusdam qui explicabo. Aperiam reiciendis laudantium commodi.';
-
+     $text = $_POST['censor_text'];
      $censorship = trim($_POST['censor_word']);
      $replace = '***'; 
      $new_text = str_replace($censorship,$replace,$text);
