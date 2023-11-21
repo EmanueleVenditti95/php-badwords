@@ -19,6 +19,7 @@
 <body>
     <h1>Censura il testo!</h1>
     <p><?php echo $text; ?></p>
+    <p><?php echo strlen($text); ?></p>
     <p><?php echo $_POST['censor_word'];  ?></p>
 </body>
 </html>
